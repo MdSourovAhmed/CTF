@@ -1,0 +1,4 @@
+unzip it, try running the pdf, examine it, its corructed. run the command
+tac corrupt.pdf > fixed.pdf
+
+now open the fixed.pdf. now you see it
