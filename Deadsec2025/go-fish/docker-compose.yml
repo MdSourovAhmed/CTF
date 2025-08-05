@@ -1,0 +1,26 @@
+services:
+  go_server:
+    build:
+      context: .
+      dockerfile: Dockerfile.go # Assuming you name the Go Dockerfile as Dockerfile.go
+    container_name: go_server
+    networks:
+      - internal_proxy_net
+    # No ports exposed to the host for the Go server
+
+  python_proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile.python # Assuming you name the Python Dockerfile as Dockerfile.python
+    container_name: python_proxy
+    ports:
+      - "5000:5000" # Expose the Python proxy port to the host
+    networks:
+      - internal_proxy_net
+    depends_on:
+      - go_server # Ensure go_server starts before the proxy
+
+networks:
+  internal_proxy_net:
+    driver: bridge
+
