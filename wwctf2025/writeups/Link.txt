@@ -1,0 +1,3 @@
+https://charcharbinks.com/post/hacktober2020-writeup/#hail-caesar
+https://coinsbench.com/world-wide-ctf-2025-solidity-jail-1-e1b6b272286d
+https://medium.com/@ben.hirons/wwctf-2025-this-is-art-writeup-cf45ef4a92fa
