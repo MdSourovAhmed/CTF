@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -b "developer_secret_cookie=0c671b50770beb0a023a7c30114aad2b728c561419662a2040f1b90b6d8b2630; session=1775a05c-8ddb-4eb4-93b1-e9a0681237cd.yPmzaucvcPfvH43Nqa-GQWWhqcE" http://play.scriptsorcerers.xyz:10132/developer
